@@ -18,6 +18,31 @@ const pages = {
        </section>
        `;
     },
+
+    "/cursos": () => {
+        const cursos = ["DS", "Enfermagem", "logistica", "administração"];
+        return `
+       <section class="card">
+       <h2>Cursos</h2>
+       <ul>
+        ${cursos.map((a) => `<li> ${a}</li>`).join("")}
+       </ul>
+       </section>
+       `;
+    },
+
+    "/profs": () => {
+        const profs = ["matheus", "mauricio", "vanessa", "sinzomar"];
+        return `
+       <section class="card">
+       <h2>Profs</h2>
+       <ul>
+        ${profs.map((a) => `<li> ${a}</li>`).join("")}
+       </ul>
+       </section>
+       `;
+    },
+
     "/sobre": () => `
     <section class="card">
     <h2>Sobre</h2>
